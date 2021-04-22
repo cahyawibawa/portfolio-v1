@@ -75,9 +75,9 @@ ul {
       justify-content: flex-end;
 }
 /* ---------------KUNCI-------------- */
-section {
+/* section {
       display: none;
-}
+} */
 section.active {
       display: block;
 }
@@ -115,6 +115,9 @@ button {
       .btn:hover::before {
             transform: translate(0px, 0px);
       }
+}
+.about-section .download {
+      margin-top: 2rem;
 }
 .close-btn {
       height: 40px;
