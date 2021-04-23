@@ -8,7 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- -----------AOS----------------- -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" type="image" href="img/top.png">
+
 </head>
 
 <body>
@@ -48,7 +51,7 @@
 
   <!-- header start -->
   <header class="header">
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="3000">
       <div class="row flex-end">
         <button type="button" class="nav-toggler">
           <span></span>
@@ -73,16 +76,20 @@
     <div class="container">
       <div class="row min-vh-100">
         <div class="about-content">
-          <img src="img/profile2.png" alt="profile-img">
-          <h1>Hello 👋, I'm Nur Cahya Wibawa.</h1>
-          <p>I,m a <span>frontend developer</span> living in Yogyakarta, Indonesia. I make web applications using
-            <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span>.
-            Check out my latest work on the <a href="#portfolio" class="link-item">portfolio page</a>. Want to talk
-            about a project? You
-            can get in
-            touch with me <a href="#contact" class="link-item">here</a>.</p>
-          <h2>skills</h2>
-          <div class="skills">
+          <div class="fp" data-aos="fade-right" data-aos-duration="3000">
+            <img src="img/profile2.png" alt="profile-img">
+          </div>
+          <h1 class="lead"></h1>
+          <div class="desc" data-aos="fade-right" data-aos-duration="3000">
+            <p>I,m a <span>frontend developer</span> living in Yogyakarta, Indonesia. I make web applications using
+              <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span>.
+              Check out my latest work on the <a href="#portfolio" class="link-item">portfolio page</a>. Want to talk
+              about a project? You
+              can get in
+              touch with me <a href="#contact" class="link-item">here</a>.</p>
+          </div>
+          <h2 class="sikil"></h2>
+          <div class="skills" data-aos="fade-left" data-aos-duration="3000">
             <div class="skill-item">html</div>
             <div class="skill-item">css</div>
             <div class="skill-item">javascript</div>
@@ -90,7 +97,7 @@
             <div class="skill-item">laravel</div>
             <div class="skill-item">codeigniter</div>
           </div>
-          <div class="download">
+          <div class="download" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
             <a href="cv.pdf" class="btn btn-cv">Download CV</a>
           </div>
         </div>
@@ -102,7 +109,7 @@
 
   <!-- portfolio section start -->
   <section class="portfolio-section sec-padding" id="portfolio">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
       <div class="row">
         <div class="section-title">
           <h2>recent works</h2>
@@ -126,7 +133,7 @@
 
       <div class="row portfolio-items">
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end">
+        <div class="portfolio-item" data-category="front-end" data-aos="flip-left" data-aos-duration="500">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/portfolio.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -150,7 +157,8 @@
         <!-- portfolio item end -->
 
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end">
+        <div class="portfolio-item" data-category="front-end" data-aos="flip-left" data-aos-duration="500"
+          data-aos-delay="200">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/bootstrap.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -174,7 +182,8 @@
         <!-- portfolio item end -->
 
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end">
+        <div class="portfolio-item" data-category="front-end" data-aos="flip-left" data-aos-duration="500"
+          data-aos-delay="250">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/bookmark.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -198,7 +207,8 @@
         <!-- portfolio item end -->
 
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end,app-design">
+        <div class="portfolio-item" data-category="front-end,app-design" data-aos="flip-left" data-aos-duration="500"
+          data-aos-delay="300">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/app.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -222,7 +232,8 @@
         <!-- portfolio item end -->
 
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end">
+        <div class="portfolio-item" data-category="front-end" data-aos="flip-left" data-aos-duration="500"
+          data-aos-delay="350">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/codephenom.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -246,7 +257,8 @@
         <!-- portfolio item end -->
 
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end">
+        <div class="portfolio-item" data-category="front-end" data-aos="flip-left" data-aos-duration="500"
+          data-aos-delay="400">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/neumorphism.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -270,7 +282,8 @@
         <!-- portfolio item end -->
 
         <!-- portfolio item start -->
-        <div class="portfolio-item" data-category="front-end">
+        <div class="portfolio-item" data-category="front-end" data-aos="flip-left" data-aos-duration="500"
+          data-aos-delay="450">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/shorterlink.PNG" alt="thumbnail">
             <button type="button" class="btn more-info-btn">more info</button>
@@ -302,7 +315,7 @@
 
   <!-- contact section start -->
   <section class="contact-section sec-padding min-vh-100" id="contact">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="section-title">
           <h2>contact me</h2>
@@ -332,22 +345,22 @@
           <div class="contact-form-inner">
             <div class="contact-form-container">
               <button type="button" class="close-btn toggle-contact-form-btn"></button>
-              <form>
+              <form name="sheet-weblyze">
                 <div class="row">
                   <div class="input-group">
-                    <input type="text" placeholder="Your Name" class="input-control">
+                    <input type="text" placeholder="Your Name" name="nama" class="input-control">
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="Your Email" class="input-control">
+                    <input type="email" placeholder="Your Email" name="email" class="input-control">
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="Subject" class="input-control">
+                    <input type="text" placeholder="Subject" name="subject" class="input-control">
                   </div>
                   <div class="input-group">
-                    <textarea placeholder="message" class="input-control"></textarea>
+                    <textarea placeholder="message" name="message" class="input-control"></textarea>
                   </div>
                   <div class="input-group">
-                    <button type="submit" class="btn btn-submit">Send</button>
+                    <button type="submit" id="btn" class="btn btn-submit">Send</button>
                   </div>
                 </div>
               </form>
@@ -396,6 +409,48 @@
     <!-- portfolio item details popup end -->
 
     <script src="js/script.js"></script>
+
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbyVU9joIly43MAxfU-h-UQs_jvzUqctuCLWet0vnciembbKEFxcbJpI-koFj2wqpYssfQ/exec';
+      const form = document.forms['sheet-weblyze'];
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+          })
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      });
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener('click', function () {
+        swal("Thanks", "Your message has been sent", "success");
+      })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {
+        duration: 2,
+        delay: 0.8,
+        text: 'Hello 👋 I`m Nur Cahya Wibawa'
+      });
+      gsap.to('.sikil', {
+        duration: 2,
+        delay: 0.8,
+        text: 'skills'
+      });
+    </script>
 </body>
 
 </html>
