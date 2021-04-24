@@ -285,6 +285,7 @@ button {
       justify-content: center;
       font-size: 25px;
       font-weight: 400;
+      text-decoration: none;
 }
 .page-loader.slide-out-right {
       transform: translateX(100%);
