@@ -481,13 +481,13 @@ button {
       font-weight: 600;
       text-transform: capitalize;
 }
-.about-content p a {
+.about-content p span.effect {
       color: var(--main-color);
       text-transform: capitalize;
       font-weight: 600;
       position: relative;
 }
-.about-content p a::before {
+.about-content p span.effect::before {
       content: "";
       position: absolute;
       left: 0%;
@@ -497,7 +497,7 @@ button {
       background-color: var(--main-color);
       transition: width 0.3s ease;
 }
-.about-content p a:hover::before {
+.about-content p span.effect:hover::before {
       width: 100%;
 }
 .about-content h2 {

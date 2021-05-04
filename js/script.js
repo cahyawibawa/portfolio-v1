@@ -145,7 +145,7 @@ function portfolioItemDetails(){
       document.querySelector(".pp-body").innerHTML =
       portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-details").innerHTML;
 
-      document.querySelector(".pp-counter").innerHTML = `${portfolioItemIndex+1} of ${portfolioItems.length} 
+      document.querySelector(".pp-counter").innerHTML = `${portfolioItemIndex+1} of ${portfolioItems.length}
       ( <span title="category">${document.querySelector(".portfolio-filter-btn.active").innerHTML}</span>)`;
 
 
