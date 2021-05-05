@@ -518,6 +518,9 @@ button {
       font-size: 16px;
       text-transform: capitalize;
 }
+.about-content .skill-item:hover {
+      transform: translateY(-5px);
+}
 
 /* portfolio section */
 .portfolio-section {

@@ -212,3 +212,15 @@ document.addEventListener("click", (e)=>{
             toggleBodyScrolling();
       }
 });
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+      origin: 'top',
+      duration: 2000,
+      reset: true
+  });
+  
+  sr.reveal(`.about-section, portfolio-section,
+              .contact-section`, {
+      interval: 200
+  })
