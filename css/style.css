@@ -76,9 +76,9 @@ ul {
       justify-content: flex-end;
 }
 /* ---------------KUNCI-------------- */
-/* section {
-      display: none;
-} */
+section {
+      overflow: hidden;
+}
 section.active {
       display: block;
 }
