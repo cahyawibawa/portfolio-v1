@@ -1134,7 +1134,8 @@ button {
       .bg-animation-effect div {
             margin-left: calc((100% - 28px) / 8);
       }
-      .portfolio-item {
+      .portfolio-item,
+      .project-box {
             width: calc(50% - 30px);
       }
 }
@@ -1146,7 +1147,8 @@ button {
       .bg-animation-effect div {
             margin-left: calc((100% - 20px) / 6);
       }
-      .portfolio-item {
+      .portfolio-item,
+      .project-box {
             width: calc(100% - 30px);
       }
 }
