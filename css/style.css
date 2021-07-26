@@ -80,13 +80,15 @@ h6 {
 }
 .heading-2,
 .heading-3 {
-      font-size: 26px;
+      font-size: 20px;
       text-transform: capitalize;
       position: relative;
       right: 80px;
+      bottom: 3rem;
       line-height: 4rem;
       font-family: "Space Mono", monospace;
 }
+
 .heading-4 {
       letter-spacing: 5px;
 }
@@ -543,6 +545,9 @@ button {
 .header .nav-inner ul a:hover {
       color: var(--main-color);
 }
+.header .cv {
+      padding-left: 20px;
+}
 
 /* -----------about section----------- */
 .about-section .min-vh-100 {
@@ -897,6 +902,109 @@ button {
       max-width: 120px;
 }
 /* certificate section */
+.project {
+      grid-column: 2/14;
+      padding: 6rem;
+}
+.project-box__wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      grid-gap: 4rem;
+      color: #000;
+      margin-top: 6rem;
+}
+.project-box {
+      padding: 2rem;
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+}
+.project-box:hover {
+      border: 2px solid #fff;
+      color: #fff;
+}
+.project .project-box:first-child {
+      background: linear-gradient(180deg, #f3cbab, #feedca);
+}
+.project .project-box:nth-child(2) {
+      background: linear-gradient(180deg, #b1e5f9, #f4d2fe);
+}
+.project .project-box:nth-child(3) {
+      background: linear-gradient(180deg, #dbb4f3, #efb7d7);
+}
+.project .project-box:nth-child(4) {
+      background: linear-gradient(180deg, #efa971, #e4cafe);
+}
+.project .project-box:nth-child(4) .project-box__link {
+      width: min-content;
+}
+.project .project-box:nth-child(5) {
+      background: linear-gradient(90deg, #b1e5f9, #f4d2fe);
+}
+.project .project-box:nth-child(5) .project-box__link {
+      width: min-content;
+}
+.project-box__link {
+      position: relative;
+      bottom: 5px;
+      left: 250px;
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+      .project-box__link {
+            width: 100%;
+      }
+}
+.project-box__content {
+      align-self: center;
+}
+.project-box:first-child,
+.project-box:nth-child(2),
+.project-box:nth-child(3),
+.project-box:nth-child(4),
+.project-box:nth-child(5) {
+      background: linear-gradient(180deg, #f3cbab, #feedca);
+}
+.project-box:first-child:after,
+.project-box:nth-child(2):after,
+.project-box:nth-child(3):after,
+.project-box:nth-child(4):after,
+.project-box:nth-child(5):after {
+      content: "";
+      position: absolute;
+      width: 103%;
+      height: 101%;
+      top: 1rem;
+      right: 0;
+      z-index: -1;
+}
+.project-box:first-child:hover,
+.project-box:nth-child(2):hover,
+.project-box:nth-child(3):hover,
+.project-box:nth-child(4):hover,
+.project-box:nth-child(5):hover {
+      background: none;
+      background-color: #000;
+}
+.project-box:first-child:hover img,
+.project-box:nth-child(2):hover img,
+.project-box:nth-child(3):hover img,
+.project-box:nth-child(4):hover img,
+.project-box:nth-child(5):hover img {
+      filter: invert(1);
+}
+.project-box:first-child:hover:after,
+.project-box:nth-child(2):hover:after,
+.project-box:nth-child(3):hover:after,
+.project-box:nth-child(4):hover:after,
+.project-box:nth-child(5):hover:after {
+      outline: 2px solid #fff;
+}
 
 /* contact section */
 .contact-section.active {
@@ -1030,8 +1138,22 @@ button {
       .bg-animation-effect div {
             margin-left: calc((100% - 28px) / 8);
       }
+
       .portfolio-item {
             width: calc(50% - 30px);
+      }
+      .project-box {
+            width: 100%;
+      }
+      .project-box .project-box__content h3 {
+            text-align: center;
+            padding-left: 120px;
+      }
+      .project-box__link {
+            position: relative;
+            left: 90px;
+            width: 20px;
+            height: 20px;
       }
 }
 @media (max-width: 767px) {
@@ -1042,8 +1164,14 @@ button {
       .bg-animation-effect div {
             margin-left: calc((100% - 20px) / 6);
       }
+
       .portfolio-item {
             width: calc(100% - 30px);
+      }
+      .project .section-title h2 {
+            position: relative;
+            text-align: center;
+            right: 30px;
       }
 }
 @media (max-width: 575px) {
