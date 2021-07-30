@@ -1,0 +1,19 @@
+.section-title {
+      padding: 0 15px;
+      margin-bottom: 40px;
+      width: 100%;
+      background-clip: text;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* background: linear-gradient(30deg, #6bc5f8, #fff, rgb(207, 89, 230)); */
+      background: linear-gradient(
+            -45deg,
+            var(--color-light-blue),
+            var(--color-light-purple),
+            var(--color-light-blue),
+            var(--color-light-purple)
+      );
+      background-size: 400% 400%;
+      animation: gradient 3s ease infinite;
+}

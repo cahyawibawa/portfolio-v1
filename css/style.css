@@ -1,29 +1,76 @@
 /* ------------fonts----------------- */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
 @font-face {
       font-family: Calibre-SemiBold;
-      src: url(Calibre-SemiBold.21cc3335.woff) format("woff"), url(Calibre-SemiBold.2c27f793.ttf) format("truetype"),
-            url(Calibre-Semibold.320db03b.svg#Calibre-Semibold) format("svg");
+      src: url(/font/Calibre-Semibold.woff) format("woff"), url(/font/Calibre-Semibold.ttf) format("truetype"),
+            url(/font/Calibre-Semibold.svg) format("svg");
       font-weight: 700;
       font-style: normal;
       font-display: swap;
 }
 @font-face {
       font-family: Calibre-Medium;
-      src: url(Calibre-Medium.bb31c6b1.woff) format("woff"), url(Calibre-Medium.cb484263.ttf) format("truetype");
+      src: url(/font/Calibre-Medium.woff) format("woff"), url(/font/Calibre-Medium.ttf) format("truetype");
       font-weight: 400;
       font-style: normal;
       font-display: swap;
 }
+@font-face {
+      font-family: "Circular Std Book";
+      src: url("/font/CircularStd-Book.woff") format("woff");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: "D-DIN Condensed";
+      src: url("/font/D-DINCondensed-Bold.woff") format("woff");
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: "Mark Pro";
+      src: url("/font/MarkPro-Heavy.woff") format("woff");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+}
+@font-face {
+      font-family: "Jacksilver";
+      src: url("/font/Jacksilver.ttf") format("ttf");
+      font-style: normal;
+      font-display: swap;
+}
+@font-face {
+      font-family: "Heaters";
+      src: url("/font/Heaters.otf") format("otf");
+      font-style: normal;
+      font-display: swap;
+}
+
 /* -----------variables-------------- */
 :root {
       /* #e98b2c; */
       --main-color: #6f34fe;
-      --dark: #1b1b22;
+      --dark: #10101a;
       --dark-light: #32323a;
       --white: #fff;
       --white-light: #c8c8c8;
+      --dark1: #1b1b22;
+}
+:root {
+      --color-white: #ffffff;
+      --color-gray: #c4c4c4;
+      --color-black: #000000;
+      --color-purple: #8000ff;
+      --color-light-purple: rgb(207, 89, 230);
+      --color-light-blue: #6bc5f8;
 }
 
 /* ----------global settings---------- */
@@ -225,12 +272,28 @@ button {
       padding: 0 15px;
       margin-bottom: 40px;
       width: 100%;
-      color: #fff;
 }
 .section-title h2 {
       font-size: 40px;
       text-transform: capitalize;
       text-align: center;
+      background: linear-gradient(-25deg, #6bc5f8, #fff, rgb(207, 89, 230));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Mark Pro", sans-serif;
+      font-weight: 300;
+}
+
+@keyframes gradient {
+      0% {
+            background-position: 0% 50%;
+      }
+      50% {
+            background-position: 100% 50%;
+      }
+      100% {
+            background-position: 0% 50%;
+      }
 }
 /* ----------custom scrollbar--------- */
 ::-webkit-scrollbar {
@@ -243,7 +306,7 @@ button {
       background-color: var(--main-color);
 }
 /* ----------animation effect---------- */
-.bg-animation-effect {
+/* .bg-animation-effect {
       position: fixed;
       left: 0;
       top: 0;
@@ -283,7 +346,7 @@ button {
       100% {
             transform: translateY(-12.5vh);
       }
-}
+} */
 /* ----------------overlay effect------------- */
 .overlay-effect {
       position: fixed;
@@ -569,6 +632,24 @@ button {
       font-size: 28px;
       margin: 0 0 8px;
 }
+.about-content h1 span {
+      font-size: 30px;
+      background: linear-gradient(
+            -45deg,
+            var(--color-light-blue),
+            var(--color-light-purple),
+            var(--color-light-blue),
+            var(--color-light-purple)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: gradient 3s ease infinite;
+      font-family: "Mark Pro", sans-serif;
+      letter-spacing: -1px;
+      font-weight: 500;
+}
 .about-content p span {
       font-weight: 600;
       text-transform: capitalize;
@@ -601,6 +682,7 @@ button {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      cursor: pointer;
 }
 .about-content .skill-item {
       background-color: var(--dark-light);
@@ -726,7 +808,7 @@ button {
       width: 100%;
 }
 .portfolio-item h3 {
-      font-size: 20px;
+      font-size: 15px;
       margin: 10px 0 5px;
       text-transform: capitalize;
       color: var(--white);
